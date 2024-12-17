@@ -31,7 +31,7 @@ def enviar_mensajes_cliente():
 if __name__ == "__main__":
     try:
         # Conecta al servidor
-        sio.connect("http://54.224.211.190:5000")
+        sio.connect("http://18.233.101.159:5000")
 
         # Ejecutar el bucle de envío de mensajes en un hilo separado
         threading.Thread(target=enviar_mensajes_cliente, daemon=True).start()
